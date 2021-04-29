@@ -9,16 +9,18 @@ for (var n=1; n<=100; n++){
 }
 
 for(var i = 0; i < numeri.length; i++) {
-    console.log(numeri[i]);
-    if (numeri[i] %3 == 0){
-        numeri[i] = fizz;
-        console.log(numeri[i]);
+    if ((numeri[i] %3 == 0) && (numeri[i] %5 == 0)) {
+        numeri[i] = fizzbuzz;
+        console.log(numeri[i] = fizzbuzz);
     }else if (numeri[i] %5 == 0){
         numeri[i] = buzz;
+        console.log(numeri[i] = buzz);
+    }else if (numeri[i] %3 == 0){
+        numeri[i] = fizz;
+        console.log(numeri[i] = fizz );
+    }else {
         console.log(numeri[i]);
-    }else if  ((numeri[i] %3 == 0) && (numeri[i] %5 == 0)) {
-        numeri[i] = fizzbuzz;
-        console.log(numeri[i]); 
     }
 }  
+
 
